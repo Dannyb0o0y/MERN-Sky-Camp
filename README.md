@@ -65,7 +65,7 @@ for additional licensing information - [https: //choosealicense.com/](https://ch
 
     
 ## Contact
-* Github Username: DanntbOoOy
+* Github Username: DannybOoOy
 * Github Profile link:(https://github.com/Dannyb0o0y/MERN-Sky-Camp)
 * Email: victor5055@outlook.com
          Jaredwilliams1019@gmail.com
