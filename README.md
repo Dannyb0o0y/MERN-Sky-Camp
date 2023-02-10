@@ -65,9 +65,13 @@ for additional licensing information - [https: //choosealicense.com/](https://ch
 
     
 ## Contact
-* Github Username: victor5055
-* Github Profile link:(https://github.com/victor5055)
+* Github Username: DanntbOoOy
+* Github Profile link:(https://github.com/Dannyb0o0y/MERN-Sky-Camp)
 * Email: victor5055@outlook.com
+         Jaredwilliams1019@gmail.com
+         danial.rf1999@gmail.com
+
+
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
