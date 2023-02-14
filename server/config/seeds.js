@@ -10,20 +10,27 @@ db.once('open', async () => {
     { name: 'Electronics' },
     { name: 'Books' },
     { name: 'Toys' }
+    { name: 'Family' },
+    { name: 'Individual' },
+    { name: 'Group' },
+    { name: 'Equipment Hire' },
+    { name: 'Clothing Hire' }
   ]);
-
-  console.log('categories seeded');
-
-  await Product.deleteMany();
-
   const products = await Product.insertMany([
     {
       name: 'Tin of Cookies',
+      name: 'Package 6 days 1 free',
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
       price: 2.99,
+      quantity: 500
+      price: 1000.00,
+      quantity: 20
+    },
+    {
+      name: 'Canned Coffee',
       quantity: 500
     },
     {
