@@ -1,11 +1,12 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa'
+import { BsGithub } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
+import { BiMailSend } from "react-icons/bi";
+// import { BiMailSend } from "react-icons/bi";
+
 
 const Footer = () => {
-    return (
-        <footer className="w-100 mt-auto bg-secondary p-4">
-            <div className="flex-row space-between px-2">
-                <span className="footer">
                     &copy;{(new Date().getFullYear())}
                     {' '}by
                     {' '}<a className="footer" href="" target="_blank" rel="noopener noreferrer">Stella Ling</a>
@@ -16,8 +17,6 @@ const Footer = () => {
             <div className="footer px-2">
                 Photographs courtesy of <a className="footer" href="" target="_blank" rel="noopener noreferrer">Unsplash</a>
             </div>
-        </footer>
-    );
 };
 
 export default Footer;

@@ -7,11 +7,10 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
-import SkiCamp from '../../assets/SkiCampPhoto.jpg'
+import {BsTelephone} from 'react-icons/bs';
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
-
   const { categories } = state;
 
   const { loading, data: categoryData } = useQuery(QUERY_CATEGORIES);
@@ -60,6 +59,10 @@ function CategoryMenu() {
         ))}
          <br></br>
       <p>We also offer horse riding lessons, delicious take-away meals, heated pool, kayaking, fishing, tennis, basketball, mini golf and transportation at the resort. We also team up with other resort owners and food caterers to secure you the most affordable and best deals for you, your family and friends.  Contact us at 1800 155 155 for more information and our friendly staff would be more than happy to assist you.</p>
+      
+      <div>
+        <p>Contact us at 1800 122 122 <BsTelephone style={{color: 'blue', fontSize:'30px'}}/>for more information and our friendly staff would be able to  assist you.</p>
+      </div>
     </div>
   );
 }

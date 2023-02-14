@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
 
 :root {
-  --primary: #5a0660;
-  --secondary: #cba5fe;
   --primary: #08a2da;
-  --secondary: #a5dbf6;
-  --tertiary: #954a37;
-  --light: #fafafa;
-  --dark: #01090c;
-  --error: rgb(84, 66, 61);
+  --secondary: #8acffa;
+  --tertiary: #3a0d6f;
+  --light: #e8f8f8;
+  --dark: #00080b;
   --error: rgb(56, 38, 33);
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
-
 * {
   box-sizing: border-box;
 }
-
 html,
 body {
   min-height: 100%;
+  background-color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  line-height: 1.5;
-  font-size: 20px;
+  line-height: 1.8;
+  font-size: 25px;
   color: var(--dark);
 }
 
@@ -41,8 +42,8 @@ h5,
 h6 {
   font-family: 'Arial', sans-serif;
   font-weight: 500;
-  margin: 10px 0;
-  line-height: 1.8;
+  margin: 5px 0;
+  line-height: 1.25;
 }
 
 h1 {
@@ -107,6 +108,43 @@ button {
 button:hover {
   opacity: .8;
 }
+
+/* Footer */
+
+footer {
+  /* background-color: var(--primary); */
+  background-color: var(--primary); 
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  margin-top: 20rem;
+  justify-content: center;
+  display: inline-flex;
+  font-weight: 500;
+  flex-wrap: wrap;
+  font-size: 20px;
+  padding-top: 15px;
+  
+}
+.footer {
+  color: var(--light);
+}
+/* Button */
+button {
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.25rem 1.5rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1.0px;
+  background-color: var(--secondary);
+}
+button:hover {
+  opacity: .9;
+}
+
 
 button[disabled] {
   cursor: default;
