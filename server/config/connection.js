@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/mern-giftme', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/MERN-Sky-Camp', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

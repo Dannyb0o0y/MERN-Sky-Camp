@@ -9,7 +9,7 @@ db.once('open', async () => {
     { name: 'Household Supplies' },
     { name: 'Electronics' },
     { name: 'Books' },
-    { name: 'Toys' }
+    { name: 'Toys' },
     { name: 'Family' },
     { name: 'Individual' },
     { name: 'Group' },
@@ -25,7 +25,7 @@ db.once('open', async () => {
       image: 'cookie-tin.jpg',
       category: categories[0]._id,
       price: 2.99,
-      quantity: 500
+      quantity: 500,
       price: 1000.00,
       quantity: 20
     },
@@ -138,9 +138,9 @@ db.once('open', async () => {
   await User.deleteMany();
 
   await User.create({
-    firstName: 'Stella',
-    lastName: 'Ling',
-    email: 'stella@testmail.com',
+    firstName: 'Victor',
+    lastName: 'Pereira',
+    email: 'victor5055@outlook.com',
     password: 'password62707',
     orders: [
       {
@@ -150,9 +150,9 @@ db.once('open', async () => {
   });
 
   await User.create({
-    firstName: 'Michelle',
-    lastName: 'Holt',
-    email: 'mholt@testmail.com',
+    firstName: 'Daniel',
+    lastName: 'Rasi',
+    email: 'danial.rf1999@gmail.com',
     password: 'password62707'
   });
 
