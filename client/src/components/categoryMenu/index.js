@@ -44,9 +44,9 @@ function CategoryMenu() {
   return (
     <div>
     <p>Welcome </p>
-    <p>Taking  trip with family, friends or on your ownis an excellent way to stay active.  Enjoy being feeling healthier surrounded by all the fresh air and sunshine that you'll find on the top of the mountain</p>
+    <p>Taking  trip with family, friends or on your own is an excellent way to stay active.  Enjoy feeling healthier, surrounded by all the fresh air and sunshine that you'll find on the top of the mountain</p>
     <img src="" alt=""></img>
-        <h2>Choose a Ski Package:</h2>
+        <h2>Choose a Ski-Camp Package:</h2>
         {categories.map((item) => (
           <button
             key={item._id}
