@@ -1,6 +1,7 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
+import { FaSkiing} from 'react-icons/fa'
 
 function Nav() {
 
@@ -38,15 +39,17 @@ function Nav() {
       );
     }
   }
-
   return (
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
           <span role="img" aria-label="shopping bag">🛍️</span>
           -MERN-Ski-Resort
+        <span role="img" aria-label="Skiing">< FaSkiing /></span>    
+           -MERN-Ski-Resort
         </Link>
       </h1>
+
 
       <nav>
         {showNavigation()}
