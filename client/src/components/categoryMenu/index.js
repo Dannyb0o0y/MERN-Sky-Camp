@@ -7,6 +7,7 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
+import SkiCamp from '../../assets/SkiCampPhoto.jpg'
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -43,9 +44,9 @@ function CategoryMenu() {
 
   return (
     <div>
-    <p>Welcome </p>
+    <p>Welcome to MERN Ski Camp Resort </p>
     <p>Taking  trip with family, friends or on your own is an excellent way to stay active.  Enjoy feeling healthier, surrounded by all the fresh air and sunshine that you'll find on the top of the mountain</p>
-    <img src="" alt=""></img>
+    <img src={SkiCamp} alt="Ski-Camp-Picture"></img>
         <h2>Choose a Ski-Camp Package:</h2>
         {categories.map((item) => (
           <button
