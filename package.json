@@ -2,7 +2,7 @@
 {
   "name": "mern-sky-camp",
   "version": "1.0.0",
-  "description": "ski-resort",
+  "description": "ski-camp",
   "main": "server/server.js",
   "scripts": {
     "start": "node server --ignore client",
