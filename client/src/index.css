@@ -180,12 +180,13 @@ input:focus {
   color: var(--blue);
 }
 .formInput:focus {
-  background-color: var(--blue);
+  background-color: var(--dark);
+  background-color: var(--grey);
   outline: none;
-  box-shadow: 0 0 0 2px var(--blue);
+  box-shadow: 0 0 0 2px var(--dark);
   color: var(--light);
+  color: var(--dark);
 }
-
 .formInput::placeholder {
   color: var(--dark);
   opacity: 1;
@@ -207,7 +208,7 @@ input:focus {
   border-radius: 6px;
   width: 200px;
   margin-left: 75px;
-  background-color: var(--dark blue);
+  background-color: var(--dark);
 }
 
 .App {

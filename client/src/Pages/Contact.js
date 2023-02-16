@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
-import emailjs from 'emailjs-com';
 import 'react-toastify/dist/ReactToastify.min.css';
 import { BsTelephone } from 'react-icons/bs';
 
