@@ -72,7 +72,7 @@ const Contact = () => {
             <form id='contact-form' onSubmit={handleSubmit(onSubmit)} className="col-12 m-3" noValidate >
                 {/* Row 1 of form */}
                 <div className='row formRow'>
-                <h1>Contact Us</h1>
+                <h1>About Us</h1>
                   <br></br>
                   <p>We also offer horse riding lessons, delicious take-away meals, heated pool,  and transportation at the resort. We also team up with other resort owners and food caterers to secure you the most affordable and best deals for you, your family and friends.</p>
 
