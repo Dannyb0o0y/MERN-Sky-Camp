@@ -7,16 +7,24 @@ import { BsLinkedin } from "react-icons/bs";
 
 
 const Footer = () => {
+    return (
+
+
+        /* SOCIAL LINKS */
+
+        <footer className="footer mt-auto py-3 bg-dark" style={{ position: 'fixed', bottom: '0px'}}>
+            <div className="flex-row space-between px-2">
+                <span className="footer px-2" style={{ color: 'white' }}>
                     &copy;{(new Date().getFullYear())}
                     {' '}by
-                    {' '}<a className="footer" href="" target="_blank" rel="noopener noreferrer">Daniel Rasi</a>
-
+                    {' '}<a className="footer px-2" href="https://github.com/Dannyb0o0y" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px' }}>Daniel Rasi</a>
                 </span>
-                <span><a className="footer" href="" target="_blank" rel="noopener noreferrer">< FaGithub /> GitHub Repository</a></span>
-            </div>
-            <div className="footer px-2">
-                Photographs courtesy of <a className="footer" href="" target="_blank" rel="noopener noreferrer">Unsplash</a>
-            </div>
+                <span><a className="footer px-2" href="https://github.com/Dannyb0o0y/MERN-Sky-Camp.git" target="_blank" rel="noopener noreferrer">< BsGithub style={{ color: 'white', fontSize: '32px' }} /></a></span>
+                
+             </div>
+
+        </footer>
+    );
 };
 
 export default Footer;
