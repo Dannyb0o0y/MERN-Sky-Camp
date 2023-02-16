@@ -97,7 +97,7 @@ const Cart = () => {
       ) : (
         <h3>
           <span role="img" aria-label="shocked">< BiShocked style={{colour: 'navy', fontSize: '50px'}}/></span>
-            Please add ski package of your choice.
+            Please a ski package of your choice.
         </h3>
       )}
     </div>
