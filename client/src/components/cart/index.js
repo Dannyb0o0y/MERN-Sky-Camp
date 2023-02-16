@@ -66,9 +66,8 @@ const Cart = () => {
   if (!state.cartOpen) {
     return (
       <div className="cart-closed" onClick={toggleCart}>
-        <span role="img" aria-label="trash">< BsCartFill style={{color:'dark', fontSize:'35px'}}/>
-          🛒
-        </span>
+      <span role="img" aria-label="trash">< BsCartFill style={{fontSize:'45px',justifyContent:'center'}} />
+</span>
       </div>
     );
   }
@@ -97,8 +96,8 @@ const Cart = () => {
         </div>
       ) : (
         <h3>
-           <span role="img" aria-label="shocked">< BiShocked style={{colour: 'navy', fontSize: '50px'}}/></span>
-            Please add SKY-Camp package of your choice.
+          <span role="img" aria-label="shocked">< BiShocked style={{colour: 'navy', fontSize: '50px'}}/></span>
+            Please add a package of your choice.
         </h3>
       )}
     </div>
