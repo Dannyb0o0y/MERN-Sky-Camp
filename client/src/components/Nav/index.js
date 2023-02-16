@@ -1,63 +1,60 @@
 import React from "react";
-import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import { FaCamping } from 'react-icons/fa'
+import { pluralize } from "../../utils/helpers"
+import { useStoreContext } from "../../utils/GlobalState";
+import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
+import { idbPromise } from "../../utils/helpers";
 
-function Nav() {
+function ProductItem(item) {
+  const [state, dispatch] = useStoreContext();
 
-  function showNavigation() {
-    if (Auth.loggedIn()) {
-      return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/orderHistory">
-              Profile
-            </Link>
-          </li>
-          <li className="mx-1">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
-          </li>
-        </ul>
-      );
+  const {
+    image,
+    name,
+    _id,
+    price,
+    quantity
+  } = item;
+
+  const { cart } = state
+
+  const addToCart = () => {
+    const itemInCart = cart.find((cartItem) => cartItem._id === _id)
+    if (itemInCart) {
+      dispatch({
+        type: UPDATE_CART_QUANTITY,
+        _id: _id,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+      });
+      idbPromise('cart', 'put', {
+        ...itemInCart,
+        purchaseQuantity: parseInt(itemInCart.purchaseQuantity) + 1
+      });
     } else {
-      return (
-        <ul className="flex-row">
-          <li className="mx-1">
-            <Link to="/signup">
-              Register
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/login">
-              Login
-            </Link>
-          </li>
-          <li className="mx-1">
-            <Link to="/contact">
-              About
-            </Link>
-          </li>
-        </ul>
-      );
+      dispatch({
+        type: ADD_TO_CART,
+        product: { ...item, purchaseQuantity: 1 }
+      });
+      idbPromise('cart', 'put', { ...item, purchaseQuantity: 1 });
     }
   }
+
   return (
-    <header className="flex-row px-1">
-      <h1>
-        <Link to="/">
-        <span role="img" aria-label="Camping">< FaCamping style={{ color: 'white', fontSize: '35px' }} /></span> -MERN-Sky-Camp
-        </Link>
-      </h1>
-
-
-      <nav>
-        {showNavigation()}
-      </nav>
-    </header>
+    <div className="card px-1 py-1">
+      <Link to={`/products/${_id}`}>
+        <img
+          alt={name}
+          src={`/images/${image}`}
+        />
+        <p>{name}</p>
+      </Link>
+      <div>
+        <div>{quantity} {pluralize("package", quantity)} Available </div>
+        <span>${price}</span>
+      </div>
+      <button onClick={addToCart}>Add to cart</button>
+    </div>
   );
 }
 
-export default Nav;
+export default ProductItem;
