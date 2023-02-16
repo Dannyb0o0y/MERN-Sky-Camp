@@ -1,45 +1,56 @@
-import decode from 'jwt-decode';
-
-class AuthService {
-  getProfile() {
-    return decode(this.getToken());
+export function pluralize(name, count) {
+  if (count === 1) {
+    return name;
   }
-
-  loggedIn() {
-    // Checks if there is a saved token and it's still valid
-    const token = this.getToken();
-    return !!token && !this.isTokenExpired(token);
-  }
-
-  isTokenExpired(token) {
-    try {
-      const decoded = decode(token);
-      if (decoded.exp < Date.now() / 1000) {
-        return true;
-      } else return false;
-    } catch (err) {
-      return false;
-    }
-  }
-
-  getToken() {
-    // Retrieves the user token from localStorage
-    return localStorage.getItem('id_token');
-  }
-
-  login(idToken) {
-    // Saves user token to localStorage
-    localStorage.setItem('id_token', idToken);
-
-    window.location.assign('/');
-  }
-
-  logout() {
-    // Clear user token and profile data from localStorage
-    localStorage.removeItem('id_token');
-    // this will reload the page and reset the state of the application
-    window.location.assign('/');
-  }
+  return name + 's';
 }
 
-export default new AuthService();
+export function idbPromise(storeName, method, object) {
+  return new Promise((resolve, reject) => {
+    const request = window.indexedDB.open('mern-ski-resort', 1);
+    let db, tx, store;
+    request.onupgradeneeded = function(e) {
+      const db = request.result;
+      db.createObjectStore('products', { keyPath: '_id' });
+      db.createObjectStore('categories', { keyPath: '_id' });
+      db.createObjectStore('cart', { keyPath: '_id' });
+    };
+
+    request.onerror = function(e) {
+      console.log('There was an error');
+    };
+
+    request.onsuccess = function(e) {
+      db = request.result;
+      tx = db.transaction(storeName, 'readwrite');
+      store = tx.objectStore(storeName);
+
+      db.onerror = function(e) {
+        console.log('error', e);
+      };
+
+      switch (method) {
+        case 'put':
+          store.put(object);
+          resolve(object);
+          break;
+        case 'get':
+          const all = store.getAll();
+          all.onsuccess = function() {
+            resolve(all.result);
+          };
+          break;
+        case 'delete':
+          store.delete(object._id);
+          break;
+        default:
+          console.log('No valid method');
+          break;
+      }
+
+      tx.oncomplete = function() {
+        db.close();
+      };
+    };
+  });
+}
