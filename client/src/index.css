@@ -25,11 +25,11 @@ body {
 
 body {
   margin: 0;
-  padding: 0;
+  padding-bottom: 50px;
   font-family: Arial, Helvetica, sans-serif, sans-serif;
   font-family: 'Open Sans', sans-serif;
   font-weight: 350;
-  line-height: 1.6;
+  line-height: 2.5;
   font-size: 25px;
   color: var(--dark);
 }
@@ -118,35 +118,7 @@ img, svg {
 
 /* Footer */
 
-footer {
-  
-  background-color: var(--secondary); 
-  width: 100%;
-  height: 80px;
-  text-align: center;
-  margin-top: 10rem;
-  justify-content: center;
-  display: inline-flex;
-  font-weight: 400;
-  flex-wrap: wrap;
-  font-size: 20px;
-  padding-top: 10px;
-  flex-shrink:0;
-  
-}
-.footer {
-  color: var(--secondary);
-  position:sticky;
-   /* margin-top: 30px; */
-  /* padding: 0.2rem;
-  /* background-color: rgb(138, 198, 243); */
-  /* position: fixed; */
-  /* bottom: 0; */
-  /* left: 0; */
-  /* width: 100%; */ 
 
-/* } */
-}
 
 /* Button */
 button {
@@ -194,6 +166,53 @@ input {
 input:focus {
   border: 3px solid var(--secondary);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+/* Contact Form input*/
+.formRow {
+  margin: 10px 0 20px 0;
+}
+.formInput {
+  padding: 15px 10px;
+  background-color: var(--whitesmoke);
+  box-shadow: 0 0 0 2px var(--blue);
+  border: 10px;
+  color: var(--blue);
+}
+.formInput:focus {
+  background-color: var(--blue);
+  outline: none;
+  box-shadow: 0 0 0 2px var(--blue);
+  color: var(--light);
+}
+
+.formInput::placeholder {
+  color: var(--dark);
+  opacity: 1;
+}
+
+.formInput:focus::placeholder {
+  color: var(--dark);
+  opacity: 1;
+}
+.errorMessage {
+  color: #f45532;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+#notifyToast {
+  color: #fff;
+  border-radius: 6px;
+  width: 200px;
+  margin-left: 75px;
+  background-color: var(--dark blue);
+}
+
+.App {
+  height: 75vh;
+  margin-top: 15vh;
 }
 
 /* Container */
@@ -273,5 +292,19 @@ header a {
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
+  }
+}
+
+/* Media Screen - Contact */
+@media (max-width: 768px) {
+  .submit-message {
+    width: 125px;
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav {
+     font-size: medium;
   }
 }

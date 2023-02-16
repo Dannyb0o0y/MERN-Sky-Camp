@@ -7,7 +7,10 @@ import CartItem from '../CartItem';
 import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
+
 import './style.css';
+import { BiShocked } from 'react-icons/bi';
+import { BsCartFill } from 'react-icons/bs';
 
 const stripePromise = loadStripe('pk_test_51LULRzE5IrKGMKYOVpxNuSyeuS716Ta9qJhSc5B668buXvqKWCSQTKRDcuPmqCywCfYZfudggJZJnEA6AY4aXwfF000fYOqZcC');
 

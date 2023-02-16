@@ -76,8 +76,10 @@ const Contact = () => {
             {/* About us section */}
                   <br></br>
                   <br></br>
-                <h1>About Us</h1>
+               
+                
                   <br></br>
+                  <h1>About Us</h1>
                   <br></br>
                   <p>We're a small company so we can offer a very personal service. You will meet our team, Daniel (the managing director), Victor (Senior Sky Sales Specialist and Instructor), Jared (Finance and Administration) there to welcome the enthusiastic campers at the camp.</p>
                   <br></br>

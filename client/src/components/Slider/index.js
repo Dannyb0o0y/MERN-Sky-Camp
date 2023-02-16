@@ -15,21 +15,21 @@ const items = [
     src: '',
     src: '',
     altText: '',
-    caption: '',
+    caption: 'Stay Healthy and Be Active',
     key: 1,
   },
   {
     src: '',
     src: '',
     altText: '',
-    caption: '',
+    caption: 'Surrounded by the fresh air and sunshine',
     key: 2,
   },
   {
     src: '',
     src: '',
     altText: '',
-    caption: '',
+    caption: 'There is no better souvenir than your smile on a sky camp',
     key: 3,
   },
 ];
@@ -54,7 +54,7 @@ const items = [
       >
         <img src={item.src} alt={item.altText} />
         <CarouselCaption
-          captionText={item.caption}
+          
           captionHeader={item.caption}
         />
       </CarouselItem>

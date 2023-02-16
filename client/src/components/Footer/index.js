@@ -2,6 +2,7 @@ import React from 'react';
 import { BsGithub } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
+import './style.css';
 
 
 
