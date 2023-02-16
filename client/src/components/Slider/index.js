@@ -1,3 +1,4 @@
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import {
@@ -8,11 +9,10 @@ import {
   CarouselCaption,
 } from 'reactstrap';
 
-<h8>A warm welcome to MERN Ski Camp</h8>
+
 
 const items = [
   {
-    src: '',
     src: '',
     altText: '',
     caption: 'Stay Healthy and Be Active',
@@ -20,19 +20,27 @@ const items = [
   },
   {
     src: '',
-    src: '',
     altText: '',
     caption: 'Surrounded by the fresh air and sunshine',
     key: 2,
   },
   {
     src: '',
-    src: '',
     altText: '',
-    caption: 'There is no better souvenir than your smile on a sky camp',
+    caption: '',
     key: 3,
   },
 ];
+
+function Slider(args) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [animating, setAnimating] = useState(false);
+
+  const next = () => {
+    if (animating) return;
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
+    setActiveIndex(nextIndex);
+  };
 
   const previous = () => {
     if (animating) return;
@@ -54,7 +62,6 @@ const items = [
       >
         <img src={item.src} alt={item.altText} />
         <CarouselCaption
-          
           captionHeader={item.caption}
         />
       </CarouselItem>

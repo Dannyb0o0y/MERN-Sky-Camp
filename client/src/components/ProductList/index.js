@@ -45,7 +45,6 @@ function ProductList() {
 
   return (
     <div className="my-2">
-      <h3 style= {{textAlign: 'center'}}>Our Packages</h3>
       <h3>Our Packages</h3>
       {state.products.length ? (
         <div className="flex-row">
@@ -61,7 +60,7 @@ function ProductList() {
           ))}
         </div>
       ) : (
-        <h3>You haven't added any products yet!</h3>
+        <h3>You haven't added any package yet!</h3>
       )}
       {loading ? <img src={spinner} alt="loading" /> : null}
     </div>
