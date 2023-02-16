@@ -16,17 +16,17 @@ const initialState = {
   cart: [
     {
       _id: '62f8e195b4e61bd50443f198',
-      name: 'Family Package 7 days',
+      name: 'SilverPackage 7 days',
       purchaseQuantity: 1
     },
     {
       _id: '62f8e195b4e61bd50443f199',
-      name: 'Family Package 4 days',
+      name: 'SilverPackage 5 days',
       purchaseQuantity: 2
     }
   ],
   cartOpen: false,
-  categories: [{ name: 'Family' }],
+  categories: [{ name: 'Silver' }],
   currentCategory: '1',
 };
 
