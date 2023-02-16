@@ -10,121 +10,66 @@ db.once('open', async () => {
     { name: 'PlatinumPackage' },
     
   ]);
+
+  console.log('categories seeded');
+
+  await Product.deleteMany();
+
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
-      name: 'Package 6 days 1 free',
+      name: 'SilverPackage 7 days',
       description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
+      'This is the end of the season sale in which the dates are from 25 February - 2 March and accomodation in the shared big apartment or luxury rooms including unlimited equipment hire and all day meals that you would require for a comfortable stay throughout the period. Hurry and save !!!',
       category: categories[0]._id,
-      price: 2.99,
-      quantity: 500,
       price: 1000.00,
-      quantity: 20
+      quantity: 5
     },
+
     {
-      name: 'Canned Coffee',
-      quantity: 500
-    },
-    {
-      name: 'Canned Coffee',
+      name: 'SilverPackage 5 days',
       description:
-        'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
-      image: 'canned-coffee.jpg',
+      'This is the end of the season sale in which the dates are from 25 February - 2 March and accomodation in the shared big apartment or luxury rooms including unlimited equipment hire and all day meals that you would require for a comfortable stay throughout the period. Hurry and save !!!',
+      image: 'APP_1735.jpg',
       category: categories[0]._id,
-      price: 1.99,
-      quantity: 500
+      price: 900.00,
+      quantity: 3
     },
     {
-      name: 'Homemade Soy Candles',
+      name: 'GoldPackage 7 days',
       category: categories[1]._id,
       description:
-        'Donec volutpat erat erat, sit amet gravida justo sodales in. Phasellus tempus euismod urna. Proin ultrices nisi ut ipsum congue, vitae porttitor libero suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lacinia a nisi non congue.',
-      image: 'candles.jpg',
-      price: 15.00,
-      quantity: 20
+      'This package includes accomodation in the shared big cabin within the camp up to 10 people with all the facilities including unlimited equipment hire that you would require for a comfortable stay throughout the period. Date available (17 March - 24 March). Check-in time: 1:00pm, Check-out time: 12:00 noon.',
+      image: 'image_kitchenLuxory.jpeg',
+      price: 1500.00,
+      quantity: 5
     },
     {
-      name: 'Handmade Soap',
+      name: 'GoldPackage 5 days',
       category: categories[1]._id,
       description:
-        'Praesent placerat, odio vel euismod venenatis, lectus arcu laoreet felis, et fringilla sapien turpis vestibulum nisl.',
-      image: 'soap.jpg',
-      price: 3.99,
-      quantity: 50
+      'This package includes accomodation in the shared big cabin within the camp up to 10 people with all the facilities including unlimited equipment hire that you would require for a comfortable stay throughout the period. Date available (17 March - 24 March). Check-in time: 1:00pm, Check-out time: 12:00 noon.',
+      image: '22813.jpg',
+      price: 1200.00,
+      quantity: 5
     },
     {
-      name: 'Hamper',
-      category: categories[1]._id,
-      description:
-        'Vivamus ut turpis in purus pretium mollis. Donec turpis odio, semper vel interdum ut, vulputate at ex. Duis dignissim nisi vel tortor imperdiet finibus. Aenean aliquam sagittis rutrum.',
-      image: 'hamper.jpg',
-      price: 14.99,
-      quantity: 100
-    },
-    {
-      name: 'Camera',
+      name: 'PlatinumPackage 7 days',
       category: categories[2]._id,
       description:
-        'Vestibulum risus metus, luctus non tortor quis, tincidunt consectetur ex. Nullam vitae lobortis ligula, ut sagittis massa. Curabitur consectetur, tellus at pulvinar venenatis, erat augue cursus erat, eu ullamcorper eros lectus ultrices ipsum. Integer rutrum, augue vitae auctor venenatis, turpis turpis elementum orci, at sagittis risus mi a leo.',
-      image: 'camera.jpg',
-      price: 399.99,
-      quantity: 30
+      'This package includes accomodation in the luxury rooms and meals for the maximum of 10 people including children. Family is entitled to six hours unlimited equipment hire per day during the duration of stay.',
+      image: 'Luxory1.jpg',
+      price: 2200.00,
+      quantity: 10
     },
     {
-      name: 'Tablet',
+      name: 'PlatinumPackage 5 days',
       category: categories[2]._id,
       description:
-        'In sodales, ipsum quis ultricies porttitor, tellus urna aliquam arcu, eget venenatis purus ligula ut nisi. Fusce ut felis dolor. Mauris justo ante, aliquet non tempus in, tempus ac lorem. Aliquam lacinia dolor eu sem eleifend ultrices. Etiam mattis metus metus. Sed ligula dui, placerat non turpis vitae, suscipit volutpat elit. Phasellus sagittis, diam elementum suscipit fringilla, libero mauris scelerisque ex, ac interdum diam erat non sapien.',
-      image: 'tablet.jpg',
-      price: 199.99,
-      quantity: 30
+      'This package includes accomodation in the luxury rooms and meals for the maximum of 10 people including children. Family is entitled to six hours unlimited equipment hire per day during the duration of stay.',
+      image: 'image_arcade.jpeg',
+      price: 1700.00,
+      quantity: 10
     },
-    {
-      name: 'Tales at Bedtime',
-      category: categories[3]._id,
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
-      price: 9.99,
-      quantity: 100
-    },
-    {
-      name: 'Spinning Top',
-      category: categories[4]._id,
-      description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
-      price: 1.99,
-      quantity: 1000
-    },
-    {
-      name: 'Set of Plastic Horses',
-      category: categories[4]._id,
-      description:
-        'Sed a mauris condimentum, elementum enim in, rhoncus dui. Phasellus lobortis leo odio, sit amet pharetra turpis porta quis.',
-      image: 'plastic-horses.jpg',
-      price: 2.99,
-      quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
-    },
-    {
-      name: 'Alphabet Blocks',
-      category: categories[4]._id,
-      description:
-        'Morbi consectetur viverra urna, eu fringilla turpis faucibus sit amet. Suspendisse potenti. Donec at dui ac sapien eleifend hendrerit vel sit amet lectus.',
-      image: 'alphabet-blocks.jpg',
-      price: 9.99,
-      quantity: 600
-    }
   ]);
 
   console.log('products seeded');
