@@ -1,36 +1,48 @@
 const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
+const bcrypt = require('bcrypt');
+const Order = require('./Order');
 
-const productSchema = new Schema({
-  name: {
+const userSchema = new Schema({
+  firstName: {
     type: String,
     required: true,
     trim: true
   },
-  description: {
-    type: String
-  },
-  image: {
-    type: String
-  },
-  price: {
-    type: Number,
+  lastName: {
+    type: String,
     required: true,
-    min: 0.99
+    trim: true
   },
-  quantity: {
-    type: Number,
-    min: 0,
-    default: 0
+  email: {
+    type: String,
+    required: true,
+    unique: true
   },
-  category: {
-    type: Schema.Types.ObjectId,
-    ref: 'Category',
-    required: true
-  }
+  password: {
+    type: String,
+    required: true,
+    minlength: 5
+  },
+  orders: [Order.schema]
 });
 
-const Product = mongoose.model('Product', productSchema);
+// set up pre-save middleware to create password
+userSchema.pre('save', async function(next) {
+  if (this.isNew || this.isModified('password')) {
+    const saltRounds = 10;
+    this.password = await bcrypt.hash(this.password, saltRounds);
+  }
 
-module.exports = Product;
+  next();
+});
+
+// compare the incoming password with the hashed password
+userSchema.methods.isCorrectPassword = async function(password) {
+  return await bcrypt.compare(password, this.password);
+};
+
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;
