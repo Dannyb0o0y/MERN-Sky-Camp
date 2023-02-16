@@ -1,9 +1,11 @@
 const express = require('express');
+
+// import ApolloServer
 const { ApolloServer } = require('apollo-server-express');
 const path = require('path');
-const { authMiddleware } = require('./utils/auth');
 require('dotenv').config();
-
+// import the typeDefs and resolvers
+const { authMiddleware } = require('./utils/auth');
 const { typeDefs, resolvers } = require('./schemas');
 const db = require('./config/connection');
 
@@ -13,7 +15,7 @@ const server = new ApolloServer({
   typeDefs,
   resolvers,
   context: authMiddleware,
-  // These two lines below enable the playground when deployed to heroku. You can remove them if you don't want this functionality
+  // These two lines below enable the playground when deployed to heroku.
   introspection: true,
   playground: true,
 });
@@ -32,6 +34,11 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/build/index.html'));
 });
 
+if (process.env.NODE_ENV === 'production') {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/build/index.html'));
+  });
+}
 
 // Create a new instance of an Apollo server with the GraphQL schema
 const startApolloServer = async (typeDefs, resolvers) => {
