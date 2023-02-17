@@ -1,11 +1,10 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import { FaSkiing } from 'react-icons/fa'
-
+import {  FaHorseHead } from "react-icons/fa";
 
 function Nav() {
-
+ 
   function showNavigation() {
     if (Auth.loggedIn()) {
       return (
@@ -50,7 +49,7 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          <span role="img" aria-label="Camping">< FaSkiing style={{ color: 'white', fontSize: '39px' }} /></span> MERN Sky Camp
+          <span role="img" aria-label="Camping"><  FaHorseHead style={{ color: 'white', fontSize: '39px' }} /></span> MERN-Sky-Camp
         </Link>
       </h1>
 

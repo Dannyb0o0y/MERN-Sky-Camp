@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon",
+    "watch": "nodemon server.js",
     "seed": "node config/seeds.js"
   },
   "keywords": [],
@@ -18,7 +18,7 @@
     "express": "^4.17.2",
     "graphql": "^16.3.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.1.8",
+    "mongoose": "^5.9.10",
     "stripe": "^8.67.0"
   },
   "devDependencies": {

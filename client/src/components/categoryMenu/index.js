@@ -47,7 +47,7 @@ function CategoryMenu() {
       <h2 style={{ textAlign: 'center' }}>A warm welcome to Sky camp Resort</h2>
       <p>Taking a trip with family, friends or on your own is an excellent way to stay active.  Enjoy being feeling healthier surrounded by all the fresh air and sunshine that you'll find on the top of the mountain.</p>
      
-      <h3>Choose a Ski Package:</h3>
+      <h3>Choose a Sky Package:</h3>
       {categories.map((item) => (
         <button 
           key={item._id}

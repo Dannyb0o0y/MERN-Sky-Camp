@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+/* Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Poppins&display=swap');
 
 
 :root {
@@ -12,22 +13,22 @@
   --spacing-one: calc(1rem * 0.5);
   --spacing-two: calc(1rem);
 }
+
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   min-height: 100%;
   background-color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   margin: 0;
   padding-bottom: 50px;
-  font-family: Arial, Helvetica, sans-serif, sans-serif;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 350;
   line-height: 2.5;
   font-size: 25px;
@@ -42,7 +43,6 @@ h5,
 h6 {
   font-family: 'Poppins', sans-serif;
   font-weight: 350;
-  margin: 10px 0;
   margin: 9px 0;
   line-height: 1.6;
 }
@@ -80,67 +80,68 @@ a {
   color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
+
 }
 
 a:hover {
   text-decoration: underline;
 }
 
+/* Header */
+
 header {
   background: var(--primary);
+  height: 80px
 }
 
 header a {
   color: var(--light);
 }
-
-button {
-  font-size: 1rem;
+header li {
   text-decoration: none;
-  padding: 0.25rem 1rem;
-  border-radius: .5rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  margin: 0 1px;
-  background-color: var(--secondary);
+  list-style: none;
 }
-
-button:hover {
-  opacity: .8;
+header img {
+  max-width: 25%;
+  background-color: var(--light);
 }
 
 /* Slider */
 
 img, svg {
   padding-top: 10px;
+
 }
 
 /* Footer */
 
 
-
 /* Button */
+
 button {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   text-decoration: none;
   padding: 0.25rem 1.5rem;
-  border-radius: .5rem;
+  border-radius: 1rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1.0px;
   background-color: var(--secondary);
 }
+
 button:hover {
   opacity: .9;
 }
 
-
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: .9;
 }
+
+
+
+
 
 img {
   max-width: 100%;
@@ -150,24 +151,29 @@ span[role="img"] {
   cursor: default;
 }
 
+/*  Form*/
+
 form {
-  width: 40%;
+  width: 100%;
+  background-color: white;
 }
 
 input {
   font-size: 1rem;
-  padding: 0.25rem;
-  border: 1px solid var(--dark);
+  /* padding: 0.25rem; */
+  padding-left: 20rem;
+  border: 2px solid var(--dark);
   outline: none;
   border-radius: 3px;
   transition: box-shadow 0.2s;
 }
 
+/* Form Input */
+
 input:focus {
-  border: 3px solid var(--secondary);
+  border: 3px solid var(--dark);
   box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
 }
-
 /* Contact Form input*/
 .formRow {
   margin: 10px 0 20px 0;
@@ -175,18 +181,17 @@ input:focus {
 .formInput {
   padding: 15px 10px;
   background-color: var(--whitesmoke);
-  box-shadow: 0 0 0 2px var(--blue);
+  box-shadow: 0 0 0 2px var(--dark);
   border: 10px;
   color: var(--blue);
 }
 .formInput:focus {
-  background-color: var(--dark);
   background-color: var(--grey);
   outline: none;
   box-shadow: 0 0 0 2px var(--dark);
-  color: var(--light);
   color: var(--dark);
 }
+
 .formInput::placeholder {
   color: var(--dark);
   opacity: 1;
@@ -196,6 +201,7 @@ input:focus {
   color: var(--dark);
   opacity: 1;
 }
+
 .errorMessage {
   color: #f45532;
   font-size: 14px;
@@ -211,12 +217,8 @@ input:focus {
   background-color: var(--dark);
 }
 
-.App {
-  height: 75vh;
-  margin-top: 15vh;
-}
-
 /* Container */
+
 .container {
   width: 85%;
   max-width: 1300px;
@@ -277,6 +279,8 @@ input:focus {
   padding-bottom: var(--spacing-two);
 }
 
+/*  card*/
+
 .card {
   width: 25%;
   text-align: center;
@@ -286,16 +290,14 @@ input:focus {
   color: var(--error);
 }
 
-header a {
-  font-size: medium;
-}
+/* Media Screen */
+
 
 @media screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
 }
-
 /* Media Screen - Contact */
 @media (max-width: 768px) {
   .submit-message {
@@ -303,9 +305,16 @@ header a {
     margin-left: 200px;
   }
 }
-
+/* Media Screen Nav */
 @media screen and (max-width: 992px) {
   nav {
+     font-size: medium;
+  }
+}
+
+/* Media Screen Header */
+@media screen and (max-width: 992px) {
+  header a {
      font-size: medium;
   }
 }
