@@ -61,7 +61,6 @@ function ProductList() {
       ) : (
         <h3>You haven't added any package yet!</h3>
       )}
-      {loading ? <img src={spinner} alt="loading" /> : null}
     </div>
   );
 }
