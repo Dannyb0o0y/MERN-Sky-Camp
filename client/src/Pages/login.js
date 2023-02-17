@@ -77,9 +77,8 @@ function Login(props) {
           <br></br>
           <p>4.  All staff will be required to certify that they are not experiencing any Covid-19 symptoms before starting work each day.  Any staff experiencing symptoms will not attend work and appropriate actions will be made with the local regulations and our own protocols.</p>
           <br></br>
-          <p>5. Everyone, including staff, are expected to wear face coverings when travelling on any transport to and from the resort, in line with all local regulations.  We make it mandatory that you must bring your face covering.</p>
+          <p>5. Everyone, including staff, are expected to wear face coverings when travelling on any transport to and from the camp, in line with all local regulations.  We make it mandatory that you must bring your face covering.</p>
           <br></br>
-          <p>6. Don't forget to purchase your travel insurance.</p>
           <br></br>
           
           </div>
