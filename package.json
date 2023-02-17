@@ -3,6 +3,9 @@
   "name": "mern-sky-camp",
   "version": "1.0.0",
   "description": "ski-camp",
+  "engines": {
+    "node": "16.18.0"
+  },
   "main": "server/server.js",
   "scripts": {
     "start": "node server --ignore client",
