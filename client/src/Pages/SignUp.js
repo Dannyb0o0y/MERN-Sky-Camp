@@ -92,7 +92,7 @@ function Signup(props) {
         <br></br>
         <p>Whether you're looking for self-catering accomodation, a simple chalet, a quiet refuge, or even an apartment or hostel, our selection of affordable packages will help you find the right fit.  These accomodation options may not feature world-class spa facilities or Michelin star dining but you can still find these on our sites and they are certainly extremely clean and comfortable which is all you would ever need.  Our reasonably priced packages will all provide the fantastic value for money.</p>
         <br></br>
-        <p>Here at Sky Camp Resort, we also recognise that not everyone has the time to take a week off work or some other personal commitments. </p>
+        <p>Here at Sky Camp Resort, we also recognize that not everyone has the time to take a week off work or some other personal commitments. </p>
         <br></br>
         <br></br>
         <p>The team at Sky Camp Resort</p>
