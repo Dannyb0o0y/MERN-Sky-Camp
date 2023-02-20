@@ -20,6 +20,7 @@ const resolvers = {
           $regex: name
         };
       }
+
       return await Product.find(params).populate('category');
     },
     product: async (parent, { _id }) => {
@@ -31,10 +32,13 @@ const resolvers = {
           path: 'orders.products',
           populate: 'category'
         });
+
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
 
         return user;
       }
+
+
       throw new AuthenticationError('Not logged in');
     },
     order: async (parent, { _id }, context) => {
@@ -47,7 +51,7 @@ const resolvers = {
       }
 
       throw new AuthenticationError('Not logged in');
-    },
+     },
 
     checkout: async (parent, args, context) => {
       const url = new URL(context.headers.referer).origin;
