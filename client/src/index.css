@@ -4,9 +4,9 @@
 
 
 :root {
-  --primary: #08a2da;
-  --secondary: #8acffa;
-  --tertiary: #3a0d6f;
+  --primary: darkgreen;
+  --secondary: orange;
+  --tertiary: orange;
   --light: #e8f8f8;
   --dark: #00080b;
   --error: rgb(56, 38, 33);
@@ -203,7 +203,7 @@ input:focus {
 }
 
 .errorMessage {
-  color: #f45532;
+  color: red;
   font-size: 14px;
   margin: 0;
   padding: 0;

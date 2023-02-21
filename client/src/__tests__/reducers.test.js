@@ -1,3 +1,4 @@
+
 import { reducer } from '../utils/reducers';
 import {
   UPDATE_PRODUCTS,
@@ -16,17 +17,17 @@ const initialState = {
   cart: [
     {
       _id: '62f8e195b4e61bd50443f198',
-      name: 'SilverPackage 7 days',
+      name: 'Silver Package 7 days',
       purchaseQuantity: 1
     },
     {
       _id: '62f8e195b4e61bd50443f199',
-      name: 'SilverPackage 5 days',
+      name: 'Silver Package 4 days',
       purchaseQuantity: 2
     }
   ],
   cartOpen: false,
-  categories: [{ name: 'Silver' }],
+  categories: [{ name: 'SilverPackage' }],
   currentCategory: '1',
 };
 
