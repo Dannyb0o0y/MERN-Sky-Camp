@@ -5,14 +5,14 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "watch": "nodemon server.js",
+    "watch": "nodemon",
     "seed": "node config/seeds.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server-express": "^3.6.2",
+   "apollo-server-express": "^3.6.2",
     "bcrypt": "^4.0.1",
     "dotenv": "^16.0.1",
     "express": "^4.17.2",

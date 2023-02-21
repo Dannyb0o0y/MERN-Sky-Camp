@@ -13,13 +13,14 @@ db.once('open', async () => {
 
   console.log('categories seeded');
 
-  await Product.deleteMany();
+ 
 
   const products = await Product.insertMany([
     {
       name: 'SilverPackage 7 days',
       description:
       'This is the end of the season sale in which the dates are from 25 February - 2 March and accomodation in the shared big apartment or luxury rooms including unlimited equipment hire and all day meals that you would require for a comfortable stay throughout the period. Hurry and save !!!',
+      image:  'SkyCampPic.jpg',
       category: categories[0]._id,
       price: 1000.00,
       quantity: 5
