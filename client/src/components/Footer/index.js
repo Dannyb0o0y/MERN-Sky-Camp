@@ -18,6 +18,7 @@ const Footer = () => {
                 <span className="footer px-2" style={{ color: 'white' }}>
                     &copy;{(new Date().getFullYear())}
                     {' '}by
+                    {' '}<a className="footer px-2" href="https://github.com/victor5055" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px' }}>Victor Pererira</a>
                     {' '}<a className="footer px-2" href="https://github.com/Dannyb0o0y" target="_blank" rel="noopener noreferrer" style={{ color: 'white', fontSize: '20px' }}>Daniel Rasi</a>
                 </span>
                 <span><a className="footer px-2" href="https://github.com/Dannyb0o0y/MERN-Sky-Camp.git" target="_blank" rel="noopener noreferrer">< BsGithub style={{ color: 'white', fontSize: '32px' }} /></a></span>

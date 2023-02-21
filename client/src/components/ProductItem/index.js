@@ -46,16 +46,14 @@ function ProductItem(item) {
           alt={name}
           src={`/images/${image}`}
         />
-              <p>{name}</p>
+       <p>{name}</p>
       </Link>
       <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <div>{quantity} {pluralize("package", quantity)} Available </div>
+      <div>{quantity} {pluralize("package", quantity)} Available </div>
         <span>${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
-
 export default ProductItem;
