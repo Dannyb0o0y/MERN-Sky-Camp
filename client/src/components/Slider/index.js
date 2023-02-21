@@ -13,22 +13,34 @@ import {
 
 const items = [
   {
-    src: '',
+    src: 'https://robehotel.com.au/wp-content/uploads/2022/07/ROBE-FOOD137-1290x650.jpg',
     altText: '',
-    caption: 'Stay Healthy and Be Active',
+    caption: 'Delcious Food and Drinks',
     key: 1,
   },
   {
-    src: '',
+    src: 'https://blog.cetrain.isu.edu/hubfs/princeville-horseback-riding-825x525-1.jpg',
     altText: '',
-    caption: 'Surrounded by the fresh air and sunshine',
+    caption: 'Horse Riding',
     key: 2,
   },
   {
-    src: '',
+    src: 'https://www.colorado.edu/sportsclub/kayaking/sites/default/files/styles/slider/public/block/cu_kayaking_club.jpg?itok=X_T1t094',
     altText: '',
-    caption: '',
+    caption: 'Kayaking',
     key: 3,
+  },
+  {
+    src: 'https://static01.nyt.com/images/2014/08/15/sports/15minigolf1/15minigolf1-superJumbo.jpg',
+    altText: '',
+    caption: 'Mini Golf',
+    key: 4,
+  },
+  {
+    src: 'https://blog-assets.thedyrt.com/uploads/2018/07/southernriverfishing.jpg',
+    altText: '',
+    caption: 'Fishing',
+    key: 5,
   },
 ];
 
