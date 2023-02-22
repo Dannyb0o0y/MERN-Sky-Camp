@@ -83,7 +83,7 @@ function Signup(props) {
         <div className="flex-row flex-end">
           <button type="submit">Submit</button>
         </div>
-        {/* Marketing Materials - Affordable Sky Breaks  */}
+        {/* Marketing Materials */}
         <div>
           <br></br>
         <p><strong>Thank you for registering with us.  Take a look at our affordable packages, to help you plan your next <span style={{ color: 'orange' }}>trip without spending over the odds.</span></strong></p>

@@ -73,11 +73,11 @@ function Login(props) {
           <br></br>
           <p style={{color: 'orange', fontSize:'30px'}}>Here are some of extra measures that we have in place to give you extra peace of mind for your next holiday.</p>
           <br></br>
-          <p>2.  We'll do our very best to make sure your holiday is everything the way it should be. However, due to the constantly evolving nature of the COVID-19 crisis, we might need to change or withdraw some of the advertised accommodation facilities and resort services to keep everyone safe.  Wherever we could, you will be notified in advance but sometimes it might be at a short notice.</p>
+          <p>1.  We'll do our very best to make sure your holiday is everything the way it should be. However, due to the constantly evolving nature of the COVID-19 crisis, we might need to change or withdraw some of the advertised accommodation facilities and resort services to keep everyone safe.  Wherever we could, you will be notified in advance but sometimes it might be at a short notice.</p>
           <br></br>
-          <p>4.  All staff will be required to certify that they are not experiencing any Covid-19 symptoms before starting work each day.  Any staff experiencing symptoms will not attend work and appropriate actions will be made with the local regulations and our own protocols.</p>
+          <p>2.  All staff will be required to certify that they are not experiencing any Covid-19 symptoms before starting work each day.  Any staff experiencing symptoms will not attend work and appropriate actions will be made with the local regulations and our own protocols.</p>
           <br></br>
-          <p>5. Everyone, including staff, are expected to wear face coverings when travelling on any transport to and from the camp, in line with all local regulations.  We make it mandatory that you must bring your face covering.</p>
+          <p>3. Everyone, including staff, are expected to wear face coverings when travelling on any transport to and from the camp, in line with all local regulations.  We make it mandatory that you must bring your face covering.</p>
           <br></br>
           <br></br>
           

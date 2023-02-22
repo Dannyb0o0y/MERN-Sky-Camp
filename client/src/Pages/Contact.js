@@ -79,7 +79,7 @@ const Contact = () => {
                   <h1>About Us</h1>
                   <br></br>
                   <br></br>
-                  <p>We're a close-knit bunch in a small company so we can offer a very personal service, You will meet our team, Victor and Daniel (the managing director), Jared and Ali (Finance and Administration), Aubree, Jada, Averie and Rebecca(Instructors)  there to welcome you to the resort.   Meet the team ......</p>
+                  <p>We're a small company so we can offer a very personal service, You will meet our team, Victor and Daniel (the managing director), Jared and Ali (Finance and Administration), Aubree, Jada, Averie and Rebecca(Instructors)  there to welcome you to the resort.   Meet the team ......</p>
                   <img src="/../../../images/team01.jpg" alt=""></img>
                   <br></br>
                   {/* Contact */}
