@@ -88,9 +88,9 @@ function Signup(props) {
           <br></br>
         <p><strong>Thank you for registering with us.  Take a look at our affordable packages, to help you plan your next <span style={{ color: 'orange' }}>trip without spending over the odds.</span></strong></p>
         <br></br>
-        <p>There's no denying that, for most of us, budget is certainly would be our biggest consideration when it comes to planning a holiday.we managed to come with a number of travel packages, great value accomodation options and helpful tips to help you save money and enjoy your weeknd at sky camp. </p>
+        <p>There's no denying that, for most of us, budget is certainly would be our biggest consideration when it comes to planning a holiday. We managed to come up with a number of travel packages, great value accomodation options and helpful tips to help you save money and enjoy your weekend at MERN Sky-Camp. </p>
         <br></br>
-        <p>Whether you're looking for self-catering accomodation, a simple chalet, a quiet refuge, or even an apartment or hostel, our selection of affordable packages will help you find the right fit.  These accomodation options may not feature world-class spa facilities or Michelin star dining but you can still find these on our sites and they are certainly extremely clean and comfortable which is all you would ever need.  Our reasonably priced packages will all provide the fantastic value for money.</p>
+        <p>Whether you're looking for self-catering accomodation, a quiet refuge, or even an apartment or hostel, our selection of affordable packages will help you find the right fit.  These accommodation options may not feature world-class spa facilities or 5-star dining, but you can still find these on our sites and they are certainly extremely clean and comfortable which is all you would ever need.  All Our reasonably priced packages will provide you the fantastic value for money.</p>
         <br></br>
         <p>Here at Sky Camp Resort, we also recognize that not everyone has the time to take a week off work or some other personal commitments. </p>
         <br></br>
