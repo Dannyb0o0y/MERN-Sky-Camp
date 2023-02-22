@@ -12,7 +12,7 @@ import './style.css';
 import { BiShocked } from 'react-icons/bi';
 import { BsCartFill } from 'react-icons/bs';
 
-const stripePromise = loadStripe('sk_test_51MdxqQFKGhryVkhHLjtFxU4tXYXmCrl4M2PvEJniRwW8h7fpzfqV5lZ8NVpn7P1211VVwqR0LTSPpZjdhDzMU3B000VZqVXcYv');
+const stripePromise = loadStripe('pk_live_51MdxqQFKGhryVkhHAIaeXuhtcw31tSE6XyIUDh0oGlBBbRO3a1JXfGUwL6vNPZ7TZurBtGx2FxsiXa9DnxcP4ttS00MJs0s34Z');
 
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
