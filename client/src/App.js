@@ -12,7 +12,7 @@ import Home from './pages/Home';
 import Detail from './pages/Detail';
 import NoMatch from './pages/NoMatch';
 import Login from './pages/Login';
-import Signup from './pages/Signup';
+import Signup from './pages/SignUp';
 import Nav from './components/Nav';
 import Contact from './pages/Contact';
 import { StoreProvider } from './utils/GlobalState';
