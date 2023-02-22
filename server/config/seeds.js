@@ -33,7 +33,7 @@ db.once('open', async () => {
       image: 'APP_1735.jpg',
       category: categories[0]._id,
       price: 900.00,
-      quantity: 3
+      quantity: 2
     },
     {
       name: 'GoldPackage 7 days',
@@ -60,7 +60,7 @@ db.once('open', async () => {
       'This package includes accomodation in the luxury rooms and meals for the maximum of 10 people including children. Family is entitled to six hours unlimited equipment hire per day during the duration of stay.',
       image: 'Luxory1.jpg',
       price: 2200.00,
-      quantity: 10
+      quantity: 3
     },
     {
       name: 'PlatinumPackage 5 days',
@@ -69,7 +69,7 @@ db.once('open', async () => {
       'This package includes accomodation in the luxury rooms and meals for the maximum of 10 people including children. Family is entitled to six hours unlimited equipment hire per day during the duration of stay.',
       image: 'image_arcade.jpeg',
       price: 1700.00,
-      quantity: 10
+      quantity: 3
     },
   ]);
 

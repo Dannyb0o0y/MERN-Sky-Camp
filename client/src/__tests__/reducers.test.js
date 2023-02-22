@@ -16,12 +16,12 @@ const initialState = {
   products: [],
   cart: [
     {
-      _id: '62f8e195b4e61bd50443f198',
+      _id: '63f4fb9d670a6514302918e1',
       name: 'Silver Package 7 days',
       purchaseQuantity: 1
     },
     {
-      _id: '62f8e195b4e61bd50443f199',
+      _id: '63f4fb9d670a6514302918e2',
       name: 'Silver Package 4 days',
       purchaseQuantity: 2
     }
@@ -54,7 +54,7 @@ test('ADD_TO_CART', () => {
 test('UPDATE_CART_QUANTITY', () => {
   let newState = reducer(initialState, {
     type: UPDATE_CART_QUANTITY,
-    _id: '62f8e195b4e61bd50443f198',
+    _id: '63f4fb9d670a6514302918e1',
     purchaseQuantity: 3
   });
 
@@ -67,7 +67,7 @@ test('UPDATE_CART_QUANTITY', () => {
 test('REMOVE_FROM_CART', () => {
   let newState1 = reducer(initialState, {
     type: REMOVE_FROM_CART,
-    _id: '62f8e195b4e61bd50443f198'
+    _id: '63f4fb9d670a6514302918e1'
   });
 
   expect(newState1.cartOpen).toBe(true);
@@ -76,7 +76,7 @@ test('REMOVE_FROM_CART', () => {
 
   let newState2 = reducer(newState1, {
     type: REMOVE_FROM_CART,
-    _id: '62f8e195b4e61bd50443f199'
+    _id: '63f4fb9d670a6514302918e2'
   });
 
   expect(newState2.cartOpen).toBe(false);
