@@ -81,15 +81,12 @@ The MERN stack has a three-layer architecture based on Model-View-Controller pat
 React JS for the front end, that is, the client (View) in which the user inputs data and the data display,
 GraphQL with a Node.js and Express.js server for the method called to store and retrieve data,
 MongoDB and Mongoose ODM for the database (Model) to store raw data and contains no logic.
-<<<<<<< HEAD
 
 Before deploying to Heroku, the application is run in develop mode and tested using GraphQL by entering at command prompt:-
 
 npm run seed
 
 npm run develop ( cd to the correct directory)
-=======
->>>>>>> cd99c172b75bf29dbdb2b4970d09ae54801ac8ae
 
 As a start and at the command prompt, type in npm install to ensure all that the dependencies are installed.
 
