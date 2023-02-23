@@ -12,4 +12,4 @@ ReactDOM.render(
   document.getElementById('root')
 );
 //change//
-serviceWorker.register();
+// serviceWorker.register();
