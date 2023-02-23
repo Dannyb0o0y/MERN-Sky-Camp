@@ -45,6 +45,8 @@ const Contact = () => {
         message
       };
 
+console.log(process.env.REACT_APP_USER_ID)
+
       // Use emailjs to email contact form data
       await emailjs.send(
         process.env.REACT_APP_SERVICE_ID,
@@ -52,6 +54,7 @@ const Contact = () => {
         templateParams,
         process.env.REACT_APP_USER_ID
       );
+
 
       // Reset contact form fields after submission
       reset();
