@@ -14,6 +14,7 @@ import { BsCartFill } from 'react-icons/bs';
 
 const stripePromise = loadStripe('pk_live_51MdxqQFKGhryVkhHAIaeXuhtcw31tSE6XyIUDh0oGlBBbRO3a1JXfGUwL6vNPZ7TZurBtGx2FxsiXa9DnxcP4ttS00MJs0s34Z');
 
+
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
@@ -58,6 +59,8 @@ const Cart = () => {
       }
     });
 
+console.log(getCheckout);
+
     getCheckout({
       variables: { products: productIds },
     });
@@ -71,8 +74,6 @@ const Cart = () => {
       </div>
     );
   }
-
-  console.log(onClick);
 
   return (
     <div className="cart">
