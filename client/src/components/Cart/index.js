@@ -14,6 +14,7 @@ import { BsCartFill } from 'react-icons/bs';
 
 const stripePromise = loadStripe('pk_test_51MdxqQFKGhryVkhHjDqqtjVXKX7BKTqTRUEaocIzubJafl3TeKmPrd5qpyJU0PA9uLz6CdTr9P6uaWhHdfu3a2EW00L9kfIfwg');
 
+
 const Cart = () => {
   const [state, dispatch] = useStoreContext();
   const [getCheckout, { data }] = useLazyQuery(QUERY_CHECKOUT);
@@ -57,7 +58,7 @@ const Cart = () => {
         productIds.push(item._id);
       }
     });
-console.log(getChekout);
+
     getCheckout({
       variables: { products: productIds },
     });
@@ -86,6 +87,7 @@ console.log(getChekout);
 
           <div className="flex-row space-between">
             <strong>Total: ${calculateTotal()}</strong>
+
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
