@@ -12,7 +12,7 @@ import './style.css';
 import { BiShocked } from 'react-icons/bi';
 import { BsCartFill } from 'react-icons/bs';
 
-const stripePromise = loadStripe('pk_live_51MdxqQFKGhryVkhHAIaeXuhtcw31tSE6XyIUDh0oGlBBbRO3a1JXfGUwL6vNPZ7TZurBtGx2FxsiXa9DnxcP4ttS00MJs0s34Z');
+const stripePromise = loadStripe('pk_test_51MdxqQFKGhryVkhHjDqqtjVXKX7BKTqTRUEaocIzubJafl3TeKmPrd5qpyJU0PA9uLz6CdTr9P6uaWhHdfu3a2EW00L9kfIfwg');
 
 
 const Cart = () => {
@@ -58,8 +58,6 @@ const Cart = () => {
         productIds.push(item._id);
       }
     });
-
-console.log(getCheckout);
 
     getCheckout({
       variables: { products: productIds },

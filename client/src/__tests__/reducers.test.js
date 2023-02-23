@@ -22,7 +22,7 @@ const initialState = {
     },
     {
       _id: '63f4fb9d670a6514302918e2',
-      name: 'Silver Package 4 days',
+      name: 'Silver Package 5 days',
       purchaseQuantity: 2
     }
   ],
