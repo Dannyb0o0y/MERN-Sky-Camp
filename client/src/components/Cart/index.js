@@ -72,6 +72,8 @@ const Cart = () => {
     );
   }
 
+  console.log(onClick);
+
   return (
     <div className="cart">
       <div className="close" onClick={toggleCart}>
@@ -86,6 +88,7 @@ const Cart = () => {
 
           <div className="flex-row space-between">
             <strong>Total: ${calculateTotal()}</strong>
+
 
             {Auth.loggedIn() ? (
               <button onClick={submitCheckout}>Checkout</button>
