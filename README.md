@@ -26,7 +26,7 @@ This project is to build an application encouraging the users to stay active, en
 ## User-Story
 ### As the Developer
 ###### [Back to Table of Contents](#Table-of-Contents)
-our group will use everything We’ve learned throughout this course to create a MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand. This project will provide you with the best opportunity to demonstrate our problem-solving skills, which employers will want to see during interviews. Once again, the user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
+Our group will use everything We’ve learned throughout this course to create a MERN stack single-page application that works with real-world data to solve a real-world challenge, with a focus on data and user demand. This project will provide you with the best opportunity to demonstrate our problem-solving skills, which employers will want to see during interviews. Once again, the user story and acceptance criteria will depend on the project that you create, but your project must fulfill the following requirements:
 
 
 Use React for the front end.
