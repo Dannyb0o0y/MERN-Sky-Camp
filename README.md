@@ -72,7 +72,7 @@ Have a high-quality README (with unique name, description, technologies used, sc
 ###### [Back to Table of Contents](#Table-of-Contents)
 Victor Pereira
 Daniel Rasi
-Jared Williams
+Jared E. Williams
 
 ## Installation
 ###### [Back to Table of Contents](#Table-of-Contents)
